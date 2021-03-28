@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1513325099 source:e:\c++ szkola\lekcja34\quiz\quiz\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+

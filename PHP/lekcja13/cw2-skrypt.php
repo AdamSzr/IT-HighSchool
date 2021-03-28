@@ -1,0 +1,36 @@
+<?php
+function wyznacz_dzien($d,$m,$r)
+  {
+      return date("l", mktime (0,0,0,$m,$d,$r));
+     //l - ma³a litera 'L' - pe³en angielski opis dnia tygodnia
+  }
+  
+  function zamien_na_pl($zmienna)
+  {
+	  
+  if ($zmienna=="Monday")
+{ return "PoniedziaÅ‚ek";}
+	
+if ($zmienna=="Tuesday")
+{return "Wtorek";}
+
+if ($zmienna=="Wednesday")
+{return "Åšroda";}
+
+if ($zmienna=="Thursday")
+{return "Czwartek";}
+
+if ($zmienna=="Friday")
+{return "PiÄ…tek";}
+
+if ($zmienna=="Saturday")
+{return "Sobota";}
+
+if ($zmienna=="Sunday")
+{return "Niedziela";}
+ 
+ }
+  
+  
+  
+?>

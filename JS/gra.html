@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="Description" content=" [wstaw tu opis strony] " />
+  <meta name="Keywords" content=" [wstaw tu slowa kluczowe] " />
+  <meta name="Author" content=" [dane autora] " />
+  <meta name="Generator" content="kED" />
+
+  <title> [tytuł strony] </title>
+
+  <link rel="stylesheet" href=" [nazwa_arkusza_stylow.css] " type="text/css" />
+
+</head>
+<body onload="ukryj()">
+<script type="text/javascript">
+function ukryj()
+{
+  document.getElementById("tekst").style.visibility="hidden";
+}
+function pokaz()
+{
+  document.getElementById("tekst").style.visibility="visible";
+}
+function podpowiedz()
+{
+	document.getElementById("ile").innerHTML="Poszukaj "+ilosc+" słów!";
+}
+function klik(x)
+{
+  ilosc--;
+	if(ilosc<0) ilosc=0;
+	if (ilosc==0) 
+	{
+	  var czasstop = new Date();
+		var twojczas=czasstop.getTime()-czas.getTime();
+		twojczas=twojczas/1000;
+		alert("Gratulacje! Masz je wszystkie!\nTwój czas: "+twojczas+"sek");
+	}
+	x.style.color="red";
+	x.onclick="";
+	document.getElementById("ile").innerHTML="";
+}
+
+var czas;
+function start()
+{
+  pokaz();
+	document.getElementById("start").click="";
+	czas = new Date();
+	
+}
+</script>
+
+<h2>Wyszukaj w tekście słowa związane z informatyką i kliknij je.</h2>
+<button id="start" onclick="start()">Rozpocznij grę!</button>
+<div id="tekst">
+<hr />
+Loremipsumdolorsitamet,consecteturadipisicingelit,seddoeiu<span onclick="klik(this)">RAM</span>smodtemporincididuntutlaboreetdoloremagnaaliqua.<br />Utenima<span onclick="klik(this)">DYSK</span>dminimveniam,quisnostrudexercitationullamcolaborisnisiutaliquipexeacommodoconsequat.<br />Duisauteiruredolo<span onclick="klik(this)">MYSZ</span>rinreprehenderitinvoluptatevelitessecillumdoloreeufugiatnullapariatur.<br />Excepteursintoccaecatcupidatatnonproident,suntinculpaquiofficiadeseruntmollitanimidestlaborum.
+<hr />
+
+<p id="ile"></p>
+<button onclick="podpowiedz()">Podpowiedź</button>
+</div>
+
+<script type="text/javascript">
+  var ile_slow=document.getElementsByTagName("span").length;
+  var ilosc=ile_slow;
+</script>
+</body>
+</html>

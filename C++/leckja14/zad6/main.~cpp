@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+
+
+    cout <<"podaj tekst a nastpnie rozszerze go w odp sposób"<<endl;
+    string tekst;
+    getline(cin,tekst);
+    string nowynapis;
+    int dl=tekst.length();
+    string spacja=" ";
+    for (int x=0;x<dl;x++)
+    {
+        nowynapis=nowynapis+tekst[x]+spacja;
+    }
+    cout<<endl<<nowynapis;
+    nowynapis="";
+    cout<<endl<<"------A-------"<<endl;
+     for (int x=dl;x>=0;x--)
+    {
+        nowynapis=nowynapis+tekst[x]+spacja;
+    }
+    cout<<endl<<nowynapis;
+
+nowynapis="";
+
+cout<<endl<<"------B-------"<<endl;
+    for (int x=0;x<dl;x++)
+    {
+        if (x%2==0)
+        {
+            nowynapis=nowynapis+tekst[x]+tekst[x+1]+spacja;
+        }
+
+    }
+cout<<endl<<nowynapis;
+cout<<endl<<"------C-------"<<endl;
+    return 0;
+}

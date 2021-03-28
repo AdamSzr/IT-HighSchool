@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1509089710 source:e:\c++ szkola\lekcja30\metoda trapezów\trapezy\main.cpp
+	<iostream>
+	<cstdlib>
+	<math.h>
+

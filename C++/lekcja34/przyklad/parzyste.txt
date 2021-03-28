@@ -1,0 +1,5 @@
+4<--tyle parzystych 
+10
+12
+14
+22

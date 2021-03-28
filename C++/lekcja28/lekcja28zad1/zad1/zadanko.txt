@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+
+    int i=12;
+    float f=3.52;
+    string st="Programowanie";
+
+    int *ii=&i;
+    float *ff=&f;
+    string *stt=&st;
+
+
+
+
+cout <<endl<<endl<<endl;
+    cout <<"Wyswietalnie zawarosci zmiennych w sposob normalny"<<endl;
+    cout<<i<<" <--- wartosc zmiennej i---"<<sizeof(i)<<endl;
+    cout<<f<<" <--- wartosc zmiennej f----"<<sizeof(f)<<endl;
+    cout<<st<<" <--- wartosc zmiennej st---"<<sizeof(st)<<endl;
+
+
+cout <<endl<<endl<<endl;
+     cout <<"Wyswietalnie zawarosci zmiennych POPRZEZ WSKAZNIKI"<<endl;
+     cout<<*ii<<" <--- wartosc wskaznika zmiennej i ---"<<sizeof(ii)<<endl;
+     cout<<*ff<<" <--- wartosc wskaznika zmiennej f ---"<<sizeof(ff)<<endl;
+     cout<<*stt<<" <--- wartosc wskaznika zmiennej st ---"<<sizeof(stt)<<endl;
+
+
+
+    return 0;
+}
