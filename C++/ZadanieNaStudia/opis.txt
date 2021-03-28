@@ -1,0 +1,2 @@
+gra stworzona na potrzeby kuzynki - studia na Politechnice Gdańskiej.
+Gra jest napisana w sposób niewłaściwy - czeka na swój moment i zostanie przepisana prawdopodobnie do C#.
